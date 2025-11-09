@@ -16,4 +16,3 @@ function checkFadeIn() {
 
 window.addEventListener('scroll', checkFadeIn);
 window.addEventListener('load', checkFadeIn);
-
