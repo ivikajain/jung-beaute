@@ -81,6 +81,18 @@ h2 {
   margin-bottom: 1rem;
 }
 
+/* ABOUT SECTION */
+#about p {
+  text-align: center;
+  max-width: 650px;
+  margin: 0.4rem auto 1.5rem; /* top | sides | bottom */
+  font-size: 1.1rem;
+  color: #633b54;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+}
+
+/* PRODUCTS */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -120,10 +132,59 @@ h2 {
   color: #633b54;
 }
 
+/* CONTACT SECTION */
 #contact {
   text-align: center;
   margin-top: 2.5rem;
 }
 
+#contact p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #633b54;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+#contact strong {
+  color: var(--rose);
+  font-weight: 500;
+}
+
 /* FOOTER */
-.site-fo
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* FADE-IN SCROLL EFFECT */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
