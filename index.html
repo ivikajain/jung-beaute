@@ -1,73 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jung Beauté — Natural Skincare</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-</head>.
-
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Jung Beauté — Natural Skincare</title>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
 <body>
-  <header class="site-header">
-    <div class="inner">
-      <h1>Jung Beauté</h1>
-      <p class="tagline">Let your skin shine, let your confidence rise!</p>
-    </div>
-  </header>
 
-  <main class="inner">
-    <section id="about">
-      <h2>About Jung Beauté</h2>
-      <p>Skincare products crafted with love and care & safe for teenage skin.</p>
-    </section>
+<!-- POLL -->
+<div id="poll-container">
+<form id="poll-form" class="poll-box">
+<h2>Welcome to Jung Beauté</h2>
+<p class="poll-sub">Sign up page</p>
 
-    <section id="products">
-      <h2>Our Products</h2>
-      <div class="products-grid">
+<label>Full Name</label>
+<input type="text" required>
 
-        <article class="product">
-          <img src="https://i.ibb.co/cXttfp3x/face-mask.jpg" alt="Moisturizing Face Pack">
-          <h3>Moisturizing Face Pack</h3>
-          <p>Blended with the goodness of Beetroot, Rose & Aloe Vera.</p>
-        </article>
+<label>Date of Birth</label>
+<input type="date" required>
 
-        <article class="product">
-          <img src="https://i.ibb.co/GQRnTrbz/toning-serum.jpg" alt="Toning Serum">
-          <h3>Toning Serum</h3>
-          <p>Combined with the goodness of Aloe Vera, Rose & Tea Tree Oil.</p>
-        </article>
+<label>Gender</label>
+<select required>
+<option value="">Select…</option>
+<option>Female</option>
+<option>Male</option>
+<option>Non binary</option>
+</select>
 
-        <article class="product">
-          <img src="https://i.ibb.co/Nfv6bJ0/beet-bliss-lip-oil.jpg" alt="Beet Bliss Lip Oil">
-          <h3>Beet Bliss Lip Oil</h3>
-          <p>Combined with the goodness of Beetroot, Vitamin E & Arnica Oil.</p>
-        </article>
+<label>Phone Number</label>
+<input type="tel" required>
 
-      </div>
-    </section>
+<label>Email (optional)</label>
+<input type="email">
 
-    <section id="contact">
-  <h2>Contact</h2>
-  <div class="contact-info">
-    <p>+91 7827455478</p>
-    <p>+91 9910662679</p>
-    <p>+91 8810396917</p>
-  </div>
+<label>What is your skin type?</label>
+<select required>
+<option value="">Select…</option>
+<option>Oily</option>
+<option>Dry</option>
+<option>Normal</option>
+<option>Combination</option>
+<option>Sensitive</option>
+</select>
+
+<label>Allergies (if any)</label>
+<input type="text"
+
+<label>How regularly do you use cosmetic products?</label>
+<select required>
+<option value="">Select…</option>
+<option>Daily</option>
+<option>Weekly</option>
+<option>Rarely</option>
+<option>Never</option>
+</select>
+
+<button type="submit" class="poll-btn">Continue</button>
+
+<!-- SKIP BUTTON -->
+<button type="button" id="skip-btn" class="skip-btn">Skip</button>
+
+</form>
+</div>
+
+<!-- MAIN SITE CONTENT -->
+<div id="site-content" style="display:none;">
+<header class="site-header">
+<div class="inner">
+<h1>Jung Beauté</h1>
+<p class="tagline">Let your skin shine, let your confidence rise!</p>
+</div>
+</header>
+
+<main class="inner">
+<section id="about">
+<h2>About Jung Beauté</h2>
+<p class="about-text">Skincare products crafted with love and care specially for teenage skin.</p>
 </section>
 
-  </main>
+<!-- PRODUCTS -->
+<section id="products">
+<h2 class="section-title">Our Products</h2>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Jung Beauté</p>
-  </footer>
+<div class="product-grid">
 
-  <!-- Script -->
-  <script src="script.js"></script>
+<!-- Face Pack -->
+<div class="product-card">
+<img src="https://i.ibb.co/0R5Z5mLY/moisturizing-face-pack.jpg" alt="Face Pack">
+<h3>Moisturizing Face Pack</h3>
+<p>Blended with the goodness of Beetroot, Rose & Aloe Vera.</p>
+</div>
+
+<!-- Beet Bliss Lip Oil -->
+<div class="product-card">
+<img src="https://i.ibb.co/v6Gssxt4/beet-bliss.jpg" alt="Beet Bliss Lip Oil">
+<h3>Beet Bliss Lip Oil</h3>
+<p>Combined with the goodness of Beetroot, Vitamin E & Arnica Oil.</p>
+</div>
+
+<!-- Serum -->
+<div class="product-card">
+<img src="https://i.ibb.co/M5gPygdx/toning-serum.jpg" alt="Toning Serum">
+<h3>Toning Serum</h3>
+<p>Combined with the goodness of Aloe Vera, Rose & Tea Tree Oil.</p>
+</div>
+
+<!-- Tangy Bliss Lip Oil -->
+<div class="product-card">
+<img src="https://i.ibb.co/SDxS9rjF/tangy-bliss.jpg" alt="Tangy Bliss Lip Oil">
+<h3>Tangy Bliss Lip Oil</h3>
+<p>Combined with the goodness of Aloe Vera, Beetroot, Rosemary oil, Arnica oil & Vitamin E.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+Dm us on instagram @jung.beaute
+<p>+91 7827455478<br>
++91 9910662679<br>
++91 8810396917</p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<p>© <span id="year"></span> Jung Beauté</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
 
