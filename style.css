@@ -545,3 +545,79 @@ h2 {
     background: #b3073f;
     color: white;
 }
+
+.buy-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #ffe0ec;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #ffbfd5;
+}
+
+
+#products {
+    margin-top: 10px;
+}
+
+.product-grid {
+    margin-top: 10px !important;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.product-card:nth-child(n+3) {
+    grid-column: span 1;
+}
+
+@media (min-width: 700px) {
+    .product-card:nth-child(3),
+    .product-card:nth-child(4),
+    .product-card:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.two-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.three-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.insta-link {
+    background: #fff7fa;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.insta-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+
+
